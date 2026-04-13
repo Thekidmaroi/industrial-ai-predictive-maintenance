@@ -43,9 +43,10 @@ This project implements a complete predictive maintenance system for industrial 
 - 37,401 data points across valve1, valve2, other scenarios
 - 34.9% labeled anomalies
 
-**NASA CMAPSS** *(Phase 2 — in progress)*
-- Turbofan engine degradation simulation
-- Remaining Useful Life (RUL) prediction
+**NASA CMAPSS — FD001**
+- Turbofan engine degradation simulation (100 train engines, 100 test engines)
+- 21 sensors, 11 retained after variance filtering
+- Remaining Useful Life (RUL) prediction — LSTM RMSE 16.4 cycles, MAE 12.9 cycles
 
 ## Technical Stack
 
