@@ -1,0 +1,9 @@
+.venv/
+data/raw/SKAB/
+notebooks/
+tests/
+__pycache__/
+*.pyc
+*.ipynb
+.git/
+.gitignore
