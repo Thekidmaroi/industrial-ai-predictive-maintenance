@@ -1,0 +1,32 @@
+data:
+  path: "data/raw/SKAB/data"
+  folders: ["valve1", "valve2", "other"]
+  sensor_cols:
+    - Accelerometer1RMS
+    - Accelerometer2RMS
+    - Current
+    - Pressure
+    - Temperature
+    - Thermocouple
+    - Voltage
+    - Volume Flow RateRMS
+
+features:
+  window_rolling: 30
+  window_sequence: 30
+  discriminant_sensors:
+    - Accelerometer1RMS
+    - Accelerometer2RMS
+    - Volume Flow RateRMS
+
+isolation_forest:
+  n_estimators: 200
+  contamination: 0.35
+  random_state: 42
+
+lstm_autoencoder:
+  latent_dim: 32
+  epochs: 30
+  batch_size: 256
+  validation_split: 0.1
+  patience: 5
